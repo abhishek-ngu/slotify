@@ -55,7 +55,7 @@ const createSlot = (req, res) => {
     date,
     time,
     duration: Number(duration),
-    isBooked: false,
+    isBooked: req.body.isBooked === true,
   };
 
   slots.push(newSlot);
